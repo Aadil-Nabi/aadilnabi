@@ -1,19 +1,9 @@
 import Image from "next/image";
-import { Roboto } from "next/font/google";
-
-const roboto = Roboto({
-  weight: "400",
-  subsets: ["latin"],
-});
+import { Montserrat } from "next/font/google";
 
 export default function RootPage() {
   return (
     <>
-      <div
-        className={`${roboto.className} text-center font-bold font-mono bg-amber-100 p-5`}
-      >
-        Welcome to my blog
-      </div>
       <div className="flex">
         <div>
           <Image
