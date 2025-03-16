@@ -1,6 +1,6 @@
 
 export default  function DashBoard() {
     return <>
-    <div>Agent Dashboard</div>
+        <div>Agent Dashboard</div>
     </>
 }

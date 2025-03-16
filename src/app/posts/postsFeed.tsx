@@ -1,7 +1,9 @@
 import { getPosts } from "@/api/posts/postDetails";
-import Link from "next/link";
+import CommentsFeed from "../comments/page";
+import Input from "@/components/input";
+import Button from "@/components/button";
 
-export default async function ProductsFeed() {
+export default async function PostsFeed() {
   const posts = await getPosts();
 
   return (
@@ -18,7 +20,9 @@ export default async function ProductsFeed() {
                 <li>{post.title}</li>
                 <br />
                 <div>
-                  <Link href={`/posts/${post.id}/comments/`}>Comments</Link>
+                    <Input/>
+                    <Button/>
+                  <CommentsFeed />
                 </div>
               </ul>
             </div>

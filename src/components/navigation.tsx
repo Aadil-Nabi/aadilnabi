@@ -10,7 +10,7 @@ export default function Navigation() {
   return (
     <>
       <div
-        className={`${montserrat.className} container-flex flex bg-amber-100 p-5 gap-5`}
+          className={`${montserrat.className} container-flex flex bg-amber-100 p-5 gap-5`}
       >
         <div>
           <Link href={"/"}>Home</Link>
@@ -20,6 +20,9 @@ export default function Navigation() {
         </div>
         <div>
           <Link href={"/users"}>Users</Link>
+        </div>
+        <div>
+          <Link href={"/dashboard"}>Dashboard</Link>
         </div>
       </div>
     </>
